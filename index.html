@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style (2).css">
 </head>
 <body>
     <header class="header">
@@ -17,16 +17,49 @@
       <a href="Project.html">Projects</a>
       <a href="Skills.html">Skills</a>
       <a href="Contact.html">Contact</a>
+      <a href="About.html">About</a>
       </nav>  
     </header>
+<div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
 
-     <!--below code is for my website footer-->
-     <footer class="footer">
-         <div class="footer-text">
-             <p>Copyright &copy; 2023 by BICTU3322 | Mzuni.</p>
-         </div>
-     </footer>
-     <!--My javascript code is outside head section-->
-     <script src="js/script.js"></script> 
-</body>   
+            <div class="slide first">
+               <img src="cars.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Audi (2).jpg" alt="">
+             </div>
+             <div class="slide">
+                <img src="MazdaCX3.jpg" alt="">
+             </div>
+             <div class="slide">
+                <img src="NissanSkyline.jpg" alt="">
+             </div>
+        </div>
+        <div class="navigation-manual">
+         <label for="radio1" class="manual-btn"></label>
+         <label for="radio2" class="manual-btn"></label>
+         <label for="radio3" class="manual-btn"></label>
+         <label for="radio4" class="manual-btn"></label>
+        </div>
+</div>
+
+<div class="container">
+    <h1 id="current-time">12:00:00</h1>
+   </div>
+
+<script>
+  let  time = document.getElementById("current-time");
+
+  setInterval(() =>{
+   let d = new Date();
+  time.innerHTML = d.toLocaleTimeString();
+},1000)
+</script>
+
+</body>
 </html>

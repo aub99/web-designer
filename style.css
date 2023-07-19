@@ -23,6 +23,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
+
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
@@ -44,6 +45,7 @@ section {
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
+
 .logo {
     font-size: 2.5rem;
     color: var(--text--color);
@@ -271,12 +273,12 @@ span {
  .footer {
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     align-items: bottom;
      flex-wrap: wrap;
      padding: 2rem 9%;
      background: var(--second-bg-color);
  }
 
-   .footer-text p{
+.footer-text p{
        font-size: 1.6rem;
    }
